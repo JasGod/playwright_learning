@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx playwright test --project chromium",
+    "start": "npx playwright test example --project chromium",
     "allure:generate": "npx allure serve",
     "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require test.setup.ts --require step-definitions/**/*.ts"
   },
