@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx playwright test",
-    "allure:generate": "npx allure generate ./allure-results --clean && npx allure open ./allure-report",
+    "start": "npx playwright test --project chromium",
+    "allure:generate": "npx allure serve",
     "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require test.setup.ts --require step-definitions/**/*.ts"
   },
   "keywords": [],
